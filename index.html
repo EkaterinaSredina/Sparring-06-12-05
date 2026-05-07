@@ -206,12 +206,12 @@ body{
     <div class="leader-badge">Лидер</div>
     <div class="team-label">Участник 1</div>
     <div class="team-name">ДО Хабаровск</div>
-    <div class="pct-display" id="pct-hbr">8%</div>
+    <div class="pct-display" id="pct-hbr">11%</div>
     <div class="pct-caption">выполнения плана</div>
-    <div class="progress-track"><div class="progress-fill" id="bar-hbr"></div></div>
+    <div class="progress-track"><div class="progress-fill" id="bar-hbr" style="width:0"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-hbr">597 362</div>
+        <div class="stat-value" id="fact-hbr">819 818</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -225,12 +225,12 @@ body{
     <div class="glow-orb"></div>
     <div class="team-label">Участник 2</div>
     <div class="team-name">ЦО Владивосток</div>
-    <div class="pct-display" id="pct-vlv">2%</div>
+    <div class="pct-display" id="pct-vlv">4%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-vlv"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-vlv">168 870</div>
+        <div class="stat-value" id="fact-vlv">455 774</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -242,8 +242,8 @@ body{
 </div>
 
 <div class="motive-bar">
-  <div class="motive-text">День первый. <span class="accent">Просыпайтесь!</span></div>
-  <div class="motive-sub">8% из 100 за неделю — темп нужно усиливать прямо сейчас.<br>Оба офиса: каждый звонок, каждая встреча, каждая сделка — на счету.</div>
+  <div class="motive-text">Результат первого дня оставляет желать лучшего. <span class="accent">Просыпайтесь!</span></div>
+  <div class="motive-sub">Каждый звонок, каждый входящий покупатель, каждый договор — на счету. Не отпускаем никого!</div>
 </div>
 
 <script>
@@ -263,15 +263,15 @@ function animateCount(el,target,isPercent,duration){
 
 window.addEventListener('load',function(){
   setTimeout(function(){
-    animateCount(document.getElementById('pct-hbr'),8,true);
-    animateCount(document.getElementById('pct-vlv'),2,true);
-    animateCount(document.getElementById('fact-hbr'),597362,false,1400);
-    animateCount(document.getElementById('fact-vlv'),168870,false,1400);
+    animateCount(document.getElementById('pct-hbr'),11,true);
+    animateCount(document.getElementById('pct-vlv'),4,true);
+    animateCount(document.getElementById('fact-hbr'),819818,false,1400);
+    animateCount(document.getElementById('fact-vlv'),455774,false,1400);
   },300);
 
   setTimeout(function(){
-    document.getElementById('bar-hbr').style.width='8%';
-    document.getElementById('bar-vlv').style.width='2%';
+    document.getElementById('bar-hbr').style.width='11%';
+    document.getElementById('bar-vlv').style.width='4%';
   },400);
 
   Chart.defaults.font.family="'Inter',sans-serif";
