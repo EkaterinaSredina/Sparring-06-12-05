@@ -263,15 +263,15 @@ function animateCount(el,target,isPercent,duration){
 
 window.addEventListener('load',function(){
   setTimeout(function(){
-    animateCount(document.getElementById('pct-hbr'),13,true);
-    animateCount(document.getElementById('pct-vlv'),8,true);
+    animateCount(document.getElementById('pct-hbr'),12,7,true);
+    animateCount(document.getElementById('pct-vlv'),5,true);
     animateCount(document.getElementById('fact-hbr'),958741,false,1400);
     animateCount(document.getElementById('fact-vlv'),823052,false,1400);
   },300);
 
   setTimeout(function(){
-    document.getElementById('bar-hbr').style.width='13%';
-    document.getElementById('bar-vlv').style.width='8%';
+    document.getElementById('bar-hbr').style.width='12,7%';
+    document.getElementById('bar-vlv').style.width='5%';
   },400);
 
   Chart.defaults.font.family="'Inter',sans-serif";
