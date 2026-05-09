@@ -196,7 +196,7 @@ body{
 <header class="header">
   <div class="header-badge">Лазурит ДВРО · Спарринг офисов · 6–12 мая 2026</div>
   <h1>Спарринг офисов</h1>
-  <p class="subtitle">Результаты трёх дней · 6–8 мая 2026 · Неделя 6–12 мая</p>
+  <p class="subtitle">Результаты четырёх дней · 6–9 мая 2026 · Неделя 6–12 мая</p>
   <div class="header-divider"></div>
 </header>
 
@@ -206,12 +206,12 @@ body{
     <div class="leader-badge">Лидер</div>
     <div class="team-label">Участник 1</div>
     <div class="team-name">ДО Хабаровск</div>
-    <div class="pct-display" id="pct-hbr">21%</div>
+    <div class="pct-display" id="pct-hbr">25%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-hbr" style="width:0"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-hbr">1 533 680</div>
+        <div class="stat-value" id="fact-hbr">1 808 797</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -225,12 +225,12 @@ body{
     <div class="glow-orb"></div>
     <div class="team-label">Участник 2</div>
     <div class="team-name">ЦО Владивосток</div>
-    <div class="pct-display" id="pct-vlv">12%</div>
+    <div class="pct-display" id="pct-vlv">17%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-vlv"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-vlv">1 265 648</div>
+        <div class="stat-value" id="fact-vlv">1 805 958</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -242,8 +242,8 @@ body{
 </div>
 
 <div class="motive-bar">
-  <div class="motive-text">Впереди <span class="accent">3 выходных дня.</span> Хабаровск, это наш шанс сильно оторваться от соперников.</div>
-  <div class="motive-sub">Не упускаем его!</div>
+  <div class="motive-text">Хабаровск, настал тот день, когда <span class="accent">реально надо проснуться!</span></div>
+  <div class="motive-sub">Или мы будем ниже плинтуса. Владивосток дышит в спину — разрыв всего 2 839 рублей. Каждая сделка на счету!</div>
 </div>
 
 <script>
@@ -263,15 +263,15 @@ function animateCount(el,target,isPercent,duration){
 
 window.addEventListener('load',function(){
   setTimeout(function(){
-    animateCount(document.getElementById('pct-hbr'),21,true);
-    animateCount(document.getElementById('pct-vlv'),12,true);
-    animateCount(document.getElementById('fact-hbr'),1533680,false,1400);
-    animateCount(document.getElementById('fact-vlv'),1265648,false,1400);
+    animateCount(document.getElementById('pct-hbr'),25,true);
+    animateCount(document.getElementById('pct-vlv'),17,true);
+    animateCount(document.getElementById('fact-hbr'),1808797,false,1400);
+    animateCount(document.getElementById('fact-vlv'),1805958,false,1400);
   },300);
 
   setTimeout(function(){
-    document.getElementById('bar-hbr').style.width='21%';
-    document.getElementById('bar-vlv').style.width='12%';
+    document.getElementById('bar-hbr').style.width='25%';
+    document.getElementById('bar-vlv').style.width='17%';
   },400);
 
   Chart.defaults.font.family="'Inter',sans-serif";
