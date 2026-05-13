@@ -197,7 +197,7 @@ body{
 <header class="header">
   <div class="header-badge">Лазурит ДВРО · Спарринг офисов · 6–12 мая 2026</div>
   <h1>Спарринг офисов</h1>
-  <p class="subtitle">Результаты шести дней · 6–11 мая 2026 · Неделя 6–12 мая</p>
+  <p class="subtitle">Финальные результаты · 6–12 мая 2026 · 7 дней</p>
   <div class="header-divider"></div>
 </header>
 
@@ -206,12 +206,12 @@ body{
     <div class="glow-orb"></div>
     <div class="team-label">Участник 1</div>
     <div class="team-name">ДО Хабаровск</div>
-    <div class="pct-display" id="pct-hbr">42%</div>
+    <div class="pct-display" id="pct-hbr">78%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-hbr" style="width:0"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-hbr">2 977 366</div>
+        <div class="stat-value" id="fact-hbr">5 539 398</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -223,15 +223,14 @@ body{
   <div class="score-vs"><div class="vs-text">VS</div></div>
   <div class="score-card vlv">
     <div class="glow-orb"></div>
-    <div class="leader-badge" style="background:var(--color-vlv);animation:pulse-badge-vlv 2s ease-in-out infinite;">Лидер</div>
     <div class="team-label">Участник 2</div>
     <div class="team-name">ЦО Владивосток</div>
-    <div class="pct-display" id="pct-vlv">42%</div>
+    <div class="pct-display" id="pct-vlv">70%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-vlv"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-vlv">4 528 665</div>
+        <div class="stat-value" id="fact-vlv">7 569 306</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -243,7 +242,7 @@ body{
 </div>
 
 <div class="motive-bar">
-  <div class="motive-text">Последний рывок! Даже невозможное возможно, нужно верить в свои силы и <span class="accent">ДЕЛАТЬ!</span></div>
+  <div class="motive-text">Победителей нет, но началась новая неделя, крутые условия — вперёд за <span class="accent">бомбической выручкой</span> и крутыми ЗП!</div>
 </div>
 
 <script>
@@ -263,15 +262,15 @@ function animateCount(el,target,isPercent,duration){
 
 window.addEventListener('load',function(){
   setTimeout(function(){
-    animateCount(document.getElementById('pct-hbr'),42,true);
-    animateCount(document.getElementById('pct-vlv'),42,true);
-    animateCount(document.getElementById('fact-hbr'),2977366,false,1400);
-    animateCount(document.getElementById('fact-vlv'),4528665,false,1400);
+    animateCount(document.getElementById('pct-hbr'),78,true);
+    animateCount(document.getElementById('pct-vlv'),70,true);
+    animateCount(document.getElementById('fact-hbr'),5539398,false,1400);
+    animateCount(document.getElementById('fact-vlv'),7569306,false,1400);
   },300);
 
   setTimeout(function(){
-    document.getElementById('bar-hbr').style.width='41.6%';
-    document.getElementById('bar-vlv').style.width='42.1%';
+    document.getElementById('bar-hbr').style.width='77.5%';
+    document.getElementById('bar-vlv').style.width='70.4%';
   },400);
 
   Chart.defaults.font.family="'Inter',sans-serif";
